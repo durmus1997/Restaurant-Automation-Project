@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{712A2FD7-B3F2-4ACE-8903-409E6AD191FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Restaurant</RootNamespace>
+    <AssemblyName>Restaurant</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gider.designer.cs">
+      <DependentUpon>Gider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guncelle.designer.cs">
+      <DependentUpon>Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap_Kes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hesap_Kes.designer.cs">
+      <DependentUpon>Hesap_Kes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kar_zarar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kar_zarar.designer.cs">
+      <DependentUpon>kar_zarar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materyal_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materyal_Ekle.designer.cs">
+      <DependentUpon>Materyal_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="products.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Satis_Gecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Satis_Gecmisi.designer.cs">
+      <DependentUpon>Satis_Gecmisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sil.designer.cs">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis.designer.cs">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables.designer.cs">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tarif.designer.cs">
+      <DependentUpon>Tarif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tur_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tur_Ekle.designer.cs">
+      <DependentUpon>Tur_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tur_Ekle2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tur_Ekle2.designer.cs">
+      <DependentUpon>Tur_Ekle2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gider.resx">
+      <DependentUpon>Gider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guncelle.resx">
+      <DependentUpon>Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hesap_Kes.resx">
+      <DependentUpon>Hesap_Kes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kar_zarar.resx">
+      <DependentUpon>kar_zarar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materyal_Ekle.resx">
+      <DependentUpon>Materyal_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Satis_Gecmisi.resx">
+      <DependentUpon>Satis_Gecmisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sil.resx">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis.resx">
+      <DependentUpon>Siparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables.resx">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarif.resx">
+      <DependentUpon>Tarif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tur_Ekle.resx">
+      <DependentUpon>Tur_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tur_Ekle2.resx">
+      <DependentUpon>Tur_Ekle2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
